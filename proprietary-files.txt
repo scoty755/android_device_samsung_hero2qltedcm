@@ -152,18 +152,12 @@ vendor/lib/libadpcmdec.so
 #vendor/lib/libsmwrapper.so
 
 # Media
-vendor/lib/libI420colorconvert.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libmm-color-convertor.so
-vendor/lib/libmmosal.so
-vendor/lib64/libI420colorconvert.so
-vendor/lib64/libOmxAacDec.so
-vendor/lib64/libOmxEvrcDec.so
-vendor/lib64/libOmxQcelp13Dec.so
-vendor/lib64/libmm-color-convertor.so
-vendor/lib64/libmmosal.so
+vendor/lib/libmmcamera2_companion_imx260.so
+vendor/lib/libmmcamera2_companion_s5k2p2xx.so
+vendor/lib/libmmcamera2_companion_s5k2l1sx.so
+vendor/lib/libmmcamera2_companion_s5k4e6xx_cc.so
+etc/firmware/ois_fw_dom.bin
+etc/firmware/ois_fw_sec.bin
 
 # Network
 #-priv-app/QtiTetherService/QtiTetherService.apk
@@ -172,8 +166,11 @@ vendor/lib64/libmmosal.so
 #vendor/lib64/libQtiTether.so
 
 # Perf
-#bin/energy-awareness
-#bin/msm_irqbalance
+# bin/energy-awareness
+# bin/msm_irqbalance
+vendor/bin/perfd
+vendor/lib64/libqti-perfd-client.so
+vendor/lib/libqti-perfd-client.so
 
 # Peripheral manager
 #bin/pm-proxy
@@ -292,8 +289,8 @@ vendor/lib64/hw/sensorhubs.msm8996.so
 
 
 # Thermal
-#-vendor/lib/libthermalclient.so
-#-vendor/lib64/libthermalclient.so
+vendor/lib/libthermalclient.so
+vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
 # Time services
