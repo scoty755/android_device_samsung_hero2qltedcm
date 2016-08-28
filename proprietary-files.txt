@@ -168,7 +168,6 @@ etc/firmware/ois_fw_sec.bin
 # Perf
 # bin/energy-awareness
 # bin/msm_irqbalance
-vendor/bin/perfd
 vendor/lib64/libqti-perfd-client.so
 vendor/lib/libqti-perfd-client.so
 
