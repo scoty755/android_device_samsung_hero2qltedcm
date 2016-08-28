@@ -122,6 +122,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     power.msm8996
 
+
+ifeq ($(RECOVERY_VARIANT),twrp)
+# TWRP specific build flags
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/root/etc/twrp.fstab:recovery/root/etc/recovery.fstab
+else
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -130,6 +136,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
     ueventd.qcom.rc
+endif
 
 # Sensors
 PRODUCT_PACKAGES += \

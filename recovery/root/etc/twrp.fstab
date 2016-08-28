@@ -1,0 +1,10 @@
+/modem		vfat		/dev/block/bootdevice/by-name/modem	flags=backup=1;display="Modem";fsflags=ro,context=u:object_r:firmware_file:s0
+/firmware		vfat		/dev/block/bootdevice/by-name/apnhlos	flags=backup=1;subpartitionof=/modem;mounttodecrypt;fsflags=ro,context=u:object_r:firmware_file:s0
+/boot		emmc		/dev/block/bootdevice/by-name/boot
+/recovery		emmc		/dev/block/bootdevice/by-name/recovery
+/system		ext4		/dev/block/bootdevice/by-name/system
+/data		ext4		/dev/block/bootdevice/by-name/userdata	flags=encryptable=footer;length=-16384
+/cache		ext4		/dev/block/bootdevice/by-name/cache
+/efs			ext4		/dev/block/bootdevice/by-name/efs		flags=backup=1;display="EFS"
+/external_sd	vfat		/dev/block/mmcblk0p1 /dev/block/mmcblk0	flags=display="Micro SDcard";storage;wipeingui;removable;settingsstorage
+/usbstorage	vfat		/dev/block/sde1 /dev/block/sde		flags=display="USB Storage";storage;wipeingui;removable
