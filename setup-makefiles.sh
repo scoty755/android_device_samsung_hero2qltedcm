@@ -129,7 +129,7 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifneq (\$(filter hero2qltedcm,\$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),hero2qltedcm)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := TimeService
