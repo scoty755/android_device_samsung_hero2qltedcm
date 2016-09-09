@@ -20,6 +20,9 @@
 # definition file).
 #
 
+# inherit from qcom-common
+-include device/samsung/qcom-common/BoardConfigCommon.mk
+
 # Boldly go.
 USE_CLANG_PLATFORM_BUILD := true
 
