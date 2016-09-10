@@ -126,7 +126,8 @@ PRODUCT_PACKAGES += \
 ifeq ($(RECOVERY_VARIANT),twrp)
 # TWRP specific build flags
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/etc/twrp.fstab:recovery/root/etc/recovery.fstab
+    $(LOCAL_PATH)/recovery/root/etc/twrp.fstab:recovery/root/etc/recovery.fstab \
+    $(LOCAL_PATH)/recovery/root/prebuilt_file_contexts:recovery/root/prebuilt_file_contexts
 else
 # Ramdisk
 PRODUCT_PACKAGES += \
