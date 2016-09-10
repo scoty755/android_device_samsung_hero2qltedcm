@@ -26,7 +26,7 @@
 # Boldly go.
 USE_CLANG_PLATFORM_BUILD := true
 
-TARGET_OTA_ASSERT_DEVICE := hero2qltedcm
+TARGET_OTA_ASSERT_DEVICE := hero2qltedcm,hero2qlte
 
 PLATFORM_PATH := device/samsung/hero2qltedcm
 
